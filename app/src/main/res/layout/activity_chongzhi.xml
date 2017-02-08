@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="#ededed"
+              tools:context=".fn.ChongzhiActivity">
+
+    <!--头部-->
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="6dp"
+                  android:background="#d04e10">
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:id="@+id/toptwo"
+                  android:background="#fc6013"
+                  android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@mipmap/back"
+            android:clickable="true"
+            android:onClick="goback"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:text="充值"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"/>
+    </LinearLayout>
+    <!--头部End-->
+
+
+    <GridView
+        android:listSelector="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:numColumns="3"
+        android:id="@+id/chongzhi_goods_gv"
+        >
+
+    </GridView>
+
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="#cccccc"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"/>
+        <!--通讯录-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+                <EditText  android:layout_width="match_parent"
+                           android:layout_height="0dp"
+                           android:layout_weight="0.7"
+                           android:id="@+id/number"
+                           android:imeOptions="actionSearch"
+                           android:inputType="text"
+                           android:layout_marginLeft="10dp"
+                           android:hint="182 1234 5678"
+                           android:gravity="bottom|left"
+                           android:textSize="20sp"
+                           android:textColor="#a1a1a1"
+                           android:background="@drawable/bg_search_sousuo"
+                           android:layout_marginTop="8dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    android:gravity="top|left"
+                    android:layout_marginLeft="15dp"
+                    android:text="账号绑定号码(山东移动)"/>
+            </LinearLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#ededed"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:text="通讯录"
+                android:clickable="true"
+                android:onClick="click"
+                android:textColor="#fc6013"
+                android:textSize="20sp"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05"
+            android:background="#ededed"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.9"
+            android:text="确认订单"
+            android:clickable="true"
+            android:textColor="#ffffff"
+            android:background="@drawable/bg_button_login_select"
+            android:gravity="center"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.05"
+            android:background="#ededed"/>
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+
+

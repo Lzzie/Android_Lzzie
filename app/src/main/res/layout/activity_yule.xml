@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="#ededed"
+              tools:context=".fn.YuleActivity">
+
+    <!--头部-->
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="6dp"
+                  android:background="#d04e10">
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:background="#fc6013"
+                  android:orientation="horizontal">
+        <ImageView android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.1"
+                   android:src="@mipmap/back"
+                   android:onClick="goback"
+                   android:clickable="true"
+                   android:layout_marginLeft="10dp"
+                   android:layout_marginTop="10dp"
+                   android:paddingTop="8dp"
+                   android:paddingBottom="8dp"
+                   android:contentDescription="@null"/>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_marginLeft="5dp"
+                      android:layout_weight="0.8">
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:focusable="true"
+                          android:focusableInTouchMode="true"
+                          android:orientation="horizontal">
+
+                <!--通过 android:focusable="true"
+                         android:focusableInTouchMode="true"
+                         放在EditText 父级，解决自动获得焦点问题
+                     -->
+                <EditText  android:layout_width="0dp"
+                           android:layout_height="35dp"
+                           android:layout_weight="1"
+                           android:id="@+id/address"
+                           android:imeOptions="actionSearch"
+                           android:inputType="text"
+                           android:hint="@string/address"
+                           android:drawableLeft="@mipmap/search2"
+                           android:textSize="16sp"
+                           android:textColor="#a1a1a1"
+                           android:background="@drawable/bg_search_sousuo"
+                           android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+            </LinearLayout>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:src="@mipmap/dwtb"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    <!--头部End-->
+
+    <com.saijie.youka.reservation.ExpandTabView
+        android:id="@+id/expandtab_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+
+
+
+    <ListView
+        android:id="@+id/yule_goods_lv"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"/>
+
+
+
+    </LinearLayout>
+

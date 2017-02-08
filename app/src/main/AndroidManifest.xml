@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.saijie.youka">
+
+    <uses-sdk android:minSdkVersion="15"/>
+
+    <!-- 二维码獲取权限 Start -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <!-- 二维码獲取权限 End -->
+    <!-- 通讯录权限 Start  -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 通讯录权限 End  -->
+
+    <application
+        android:name=".bean.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".main.WelcomeActivity"
+            android:theme="@style/Appwelcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".main.MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <!-- <扫描二维码 界面 -->
+        <activity
+            android:name=".qr.CaptureActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <!-- 扫描二维码 结果界面 -->
+        <activity
+            android:name=".qr.ResultActivity"
+            android:theme="@android:style/Theme.Black.NoTitleBar"/>
+        <activity
+            android:name=".fn.SearchActivity"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.AddressActivity"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.FqjcActivity"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".details.SellerActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.LoginActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.RegisterActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.YzmActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.SzmmActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".details.SuborderActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".details.PayorderActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".reservation.ReservationActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.FriendActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.MyordeActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.MywalletActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.MyinfoActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".reservation.DeliverActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.MymoneyActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.MypreferentialActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.MyintegralActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.MyexchangeActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.MyaddressActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.JshipaiActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.AboutActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.YuleActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.JiayuActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.JiudianActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.ChongzhiActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.HuiyuanActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.DianyingActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.RemaiActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.ChaozhiActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.TiantianActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".fn.DytuijianActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".details.DingzhuoActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+        <activity
+            android:name=".details.PaysuccessActivity"
+            android:label="@android:style/Theme.NoTitleBar"/>
+    </application>
+
+</manifest>

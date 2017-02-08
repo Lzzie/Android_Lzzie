@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:orientation="vertical"
+              android:background="#ffeee5"
+              tools:context=".fn.ChaozhiActivity">
+
+    <!--头部-->
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="6dp"
+                  android:background="#d04e10">
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="50dp"
+                  android:id="@+id/toptwo"
+                  android:background="#fc6013"
+                  android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:layout_marginLeft="20dp"
+            android:drawableLeft="@mipmap/back"
+            android:clickable="true"
+            android:onClick="goback"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:text="超值优惠"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.25"/>
+    </LinearLayout>
+    <!--头部End-->
+
+    <ListView
+        android:id="@+id/chaozhi_goods_lv"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+</LinearLayout>

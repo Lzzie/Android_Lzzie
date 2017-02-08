@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="#ffffff"
+                android:paddingBottom="15dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="星美国际影院(万阅城店)"
+            android:id="@+id/movie_seller_name"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:gravity="left"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥36"
+                android:id="@+id/movie_seller_jg"
+                android:textColor="#fc6013"
+                android:textSize="18sp"
+                android:gravity="left"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="起"
+                android:textSize="14sp"
+                android:textColor="#999999"
+                android:gravity="left"
+                android:layout_marginLeft="3dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="特惠观影"
+                android:textSize="16sp"
+                android:textColor="#fc6013"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/bg_text_dianying2"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="人民广场 > 100m"
+                android:id="@+id/movie_seller_jl"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:textColor="#999999"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="小食"
+            android:textSize="16sp"
+            android:textColor="#999999"
+            android:background="@drawable/bg_text_dianying"/>
+    </LinearLayout>
+
+
+</LinearLayout>
